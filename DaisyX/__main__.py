@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from Cutiepii_Robot import (
+from DaisyX import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -23,10 +23,10 @@ from Cutiepii_Robot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Cutiepii_Robot.modules import ALL_MODULES
-from Cutiepii_Robot.modules.helper_funcs.chat_status import is_user_admin
-from Cutiepii_Robot.modules.helper_funcs.misc import paginate_modules
-from Cutiepii_Robot.modules.disable import DisableAbleCommandHandler
+from DaisyX.modules import ALL_MODULES
+from DaisyX.modules.helper_funcs.chat_status import is_user_admin
+from DaisyX.modules.helper_funcs.misc import paginate_modules
+from DaisyX.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
